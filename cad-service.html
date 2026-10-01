@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC造施工図の外注なら大連CADチーム</title>
+    <style>
+        /* 基础全局样式 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* 页面主容器，限制最大宽度，居中显示 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding-bottom: 60px;
+        }
+
+        /* 顶部封面图 */
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            /* 替换为你自己的图片路径，这里假设图片叫 cover.jpg */
+            background-image: url('cover.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* 封面图上的暗色遮罩，让标题更清晰 */
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+        }
+
+        /* 封面上的主标题 */
+        .hero-title {
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+            right: 40px;
+            color: #fff;
+            z-index: 2;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            line-height: 1.4;
+        }
+
+        /* 文章主体内容区域 */
+        .content {
+            padding: 40px;
+        }
+
+        /* 一级标题样式 */
+        h1.main-title {
+            font-size: 26px;
+            color: #1a365d;
+            border-bottom: 2px solid #3182ce;
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* 二级标题样式 */
+        h2 {
+            font-size: 20px;
+            color: #2b6cb0;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding-left: 12px;
+            border-left: 5px solid #3182ce;
+            background-color: #ebf8ff;
+            padding: 8px 12px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* 正文段落 */
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        /* 列表样式 */
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* 针对“以下のような場合”的强调列表 */
+        ul.consult-list {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 20px 20px 20px 40px;
+            border-radius: 6px;
+            list-style-type: none;
+        }
+        ul.consult-list li {
+            position: relative;
+        }
+        ul.consult-list li::before {
+            content: "✔";
+            color: #38a169;
+            position: absolute;
+            left: -20px;
+            font-weight: bold;
+        }
+
+        /* 联系方式卡片 */
+        .contact-section {
+            background-color: #2d3748;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            color: #ffffff;
+            border-left: none;
+            background: none;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 15px;
+            margin-top: 0;
+            text-align: center;
+            padding-left: 0;
+            border-radius: 0;
+        }
+
+        .contact-section p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #cbd5e0;
+            text-align: center;
+        }
+
+        .contact-section a {
+            color: #63b3ed;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .contact-section a:hover {
+            color: #90cdf4;
+            text-decoration: underline;
+        }
+
+        /* 响应式设计：针对手机屏幕优化 */
+        @media (max-width: 600px) {
+            .hero-image { height: 220px; }
+            .hero-title { font-size: 20px; left: 20px; right: 20px; bottom: 20px; }
+            .content { padding: 20px; }
+            h1.main-title { font-size: 22px; }
+            h2 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- 封面图区域 -->
+    <div class="hero-image">
+        <div class="hero-title">
+            RC造施工図の外注なら大連CADチーム<br>
+            <span style="font-size: 0.7em; font-weight: normal;">建築施工図作成に対応</span>
+        </div>
+    </div>
+
+    <!-- 正文内容区域 -->
+    <div class="content">
+        
+        <p>建築工事において、施工図の作成は施工品質や現場での納まりを確認するために重要な業務です。</p>
+        <p>一方で、案件の集中や人手不足などにより、社内だけで施工図作成を対応することが難しいケースもあります。</p>
+        <p>大連CADチームでは、中国・大連を拠点として、RC造を中心とした建築施工図の作成、図面修正、CADトレースなどのCAD業務をサポートしています。</p>
+
+        <h2>RC造施工図の作成に対応しています</h2>
+        <p>弊チームでは、RC造建築物の施工図作成を中心に対応しています。</p>
+        <p>主な対応図面は以下の通りです。</p>
+        <ul>
+            <li>基礎伏図</li>
+            <li>床伏図</li>
+            <li>見上図</li>
+            <li>躯体施工図</li>
+            <li>階段躯体図</li>
+            <li>平面詳細図</li>
+            <li>天井伏図</li>
+            <li>仕上施工図</li>
+            <li>竣工図</li>
+            <li>図面修正</li>
+            <li>CAD化・トレース</li>
+        </ul>
+        <p>マンション、ホテル・宿泊施設、医療・福祉施設、学校・公共施設、事務所・商業施設などの建築図面に対応しています。</p>
+
+        <h2>作図前の確認を大切にしています</h2>
+        <p>施工図作成では、単に図面をCAD化するだけではなく、作図前に関連図面を確認することが重要だと考えています。</p>
+        <p>図面を受領した後、意匠図・構造図などを確認し、不明点や図面間の不整合がある場合には、作図前に確認事項として整理します。</p>
+        <p>事前に確認することで、作図後の大幅な修正や手戻りをできる限り減らすことを目指しています。</p>
+
+        <h2>経験者によるチェック体制</h2>
+        <p>大連CADチームは7名体制で、製図担当6名、チェック担当1名で業務を行っています。</p>
+        <p>製図担当者は全員10年以上のCAD経験があります。</p>
+        <p>代表の王啓華は、施工図作成21年、図面チェック15年の経験があります。</p>
+        <p>作成した図面についても、納品前に経験者によるチェックを行い、図面の内容を確認してから納品する体制を整えています。</p>
+
+        <h2>日本語での確認・連絡に対応</h2>
+        <p>施工図業務では、作図内容について細かな確認が必要になることがあります。</p>
+        <p>大連CADチームでは、日本語でのメールによる確認・連絡に対応しています。</p>
+        <p>作図前の確認事項、図面に関する質疑、修正内容などについて、日本のお客様と直接コミュニケーションを取りながら業務を進めます。</p>
+
+        <h2>施工図外注・CAD業務の協力先をお探しの企業様へ</h2>
+        <p>以下のような場合には、ぜひ一度ご相談ください。</p>
+        <ul class="consult-list">
+            <li>施工図業務が一時的に集中している</li>
+            <li>社内のCAD担当者が不足している</li>
+            <li>継続的な施工図の外注先を探している</li>
+            <li>RC造施工図を外注したい</li>
+            <li>CADトレースや図面修正を外注したい</li>
+            <li>繁忙期だけ作図をサポートしてほしい</li>
+        </ul>
+        <p>小規模な業務からのご相談にも対応しています。</p>
+        <p>また、業務上必要となる場合には、秘密保持契約（NDA）の締結についてもご相談いただけます。</p>
+
+        <h2>まずはお気軽にご相談ください</h2>
+        <p>施工図の外注先や建築CAD業務の協力先をお探しでしたら、お気軽にお問い合わせください。</p>
+        <p>図面の種類、枚数、納期などを確認した上で、対応方法をご相談させていただきます。</p>
+        <p>大連CADチームでは、RC造施工図を中心に、日本のお客様の建築CAD業務をサポートしています。</p>
+
+        <!-- 联系方式卡片 -->
+        <div class="contact-section">
+            <h2>お問い合わせ</h2>
+            <p style="font-size: 18px; color: #fff; margin-top: 15px;">大連CADチーム</p>
+            <p>代表：王 啓華（オウ ケイ カ）</p>
+            <p>所在地：中国遼寧省大連市開発区</p>
+            <p>E-mail：<a href="mailto:wangqihua5212@outlook.com">wangqihua5212@outlook.com</a></p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

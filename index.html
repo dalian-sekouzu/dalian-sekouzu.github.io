@@ -3,207 +3,1081 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>大連CADチーム｜RC造施工図・建築CAD業務サポート</title>
-    <meta name="description" content="大連CADチームは、中国・大連を拠点にRC造施工図の作成、図面修正、CADトレースなどの建築CAD業務をサポートしています。日本語での確認・連絡、NDA締結にも対応。">
+
+    <meta name="description"
+          content="大連CADチームは、RC造施工図を中心とした建築CAD業務をサポートしています。施工図作成21年の経験者を中心に7名体制で対応。日本語対応・NDA対応可。">
+
     <style>
-        body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                "Noto Sans JP",
+                "Yu Gothic",
+                "Hiragino Kaku Gothic ProN",
+                Meiryo,
+                sans-serif;
             color: #333;
             line-height: 1.8;
+            background: #fff;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            padding-bottom: 60px;
-        }
-        /* 顶部导航 */
-        .top-nav {
-            background-color: #2d3748;
-            padding: 15px 40px;
-            text-align: left;
-        }
-        .top-nav a {
-            color: #ffffff;
+
+        a {
+            color: inherit;
             text-decoration: none;
-            font-size: 15px;
-            font-weight: bold;
-            margin-right: 20px;
         }
-        .top-nav a:hover {
-            color: #63b3ed;
+
+        img {
+            max-width: 100%;
+            display: block;
         }
-        /* 首页主视觉 */
-        .hero-section {
-            background-color: #ebf8ff;
-            padding: 60px 40px;
-            text-align: center;
-            border-bottom: 1px solid #e2e8f0;
+
+        /* =========================
+           Header
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #e5e5e5;
         }
-        .hero-section h1 {
-            font-size: 28px;
-            color: #1a365d;
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-        .hero-section p {
-            font-size: 16px;
-            color: #4a5568;
-            max-width: 600px;
+
+        .header-inner {
+            max-width: 1200px;
             margin: 0 auto;
-        }
-        /* 主要内容区域 */
-        .content {
-            padding: 40px;
-        }
-        /* 业务介绍块 */
-        .intro-block {
-            margin-bottom: 50px;
-        }
-        .intro-block p {
-            font-size: 16px;
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-        /* 博客文章列表 */
-        .blog-section h2 {
-            font-size: 22px;
-            color: #2b6cb0;
-            border-bottom: 2px solid #3182ce;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-        }
-        .blog-card {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 20px;
-            transition: box-shadow 0.3s, transform 0.2s;
+            padding: 15px 25px;
             display: flex;
             align-items: center;
-            text-decoration: none;
-            color: inherit;
+            justify-content: space-between;
         }
-        .blog-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-            border-color: #90cdf4;
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #18324a;
+            letter-spacing: 1px;
         }
-        .blog-card-content h3 {
-            margin: 0 0 8px 0;
-            font-size: 18px;
-            color: #2d3748;
-        }
-        .blog-card-content p {
-            margin: 0;
+
+        nav ul {
+            display: flex;
+            gap: 28px;
+            list-style: none;
             font-size: 14px;
-            color: #718096;
         }
-        /* 联系方式卡片 */
-        .contact-section {
-            background-color: #2d3748;
-            color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            margin-top: 50px;
-            text-align: center;
+
+        nav a {
+            color: #444;
+            transition: 0.3s;
         }
-        .contact-section h2 {
-            color: #ffffff;
-            border-left: none;
-            background: none;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-            padding-bottom: 15px;
-            margin-top: 0;
+
+        nav a:hover {
+            color: #18324a;
+        }
+
+        /* =========================
+           Hero
+        ========================= */
+
+        .hero {
+            min-height: 620px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background:
+                linear-gradient(
+                    rgba(20, 40, 58, 0.65),
+                    rgba(20, 40, 58, 0.65)
+                ),
+                url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=80")
+                center / cover no-repeat;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 80px 25px;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .hero-text {
+            max-width: 700px;
+            font-size: 16px;
+            line-height: 2;
+            margin-bottom: 35px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background: #fff;
+            color: #18324a;
+            padding: 13px 30px;
+            border-radius: 3px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero-button:hover {
+            background: #e9eef2;
+        }
+
+        /* =========================
+           Common
+        ========================= */
+
+        section {
+            padding: 85px 20px;
+        }
+
+        .section-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
             text-align: center;
-            padding-left: 0;
-            border-radius: 0;
-            font-size: 20px;
+            margin-bottom: 55px;
+        }
+
+        .section-title h2 {
+            color: #18324a;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* =========================
+           About
+        ========================= */
+
+        .about {
+            background: #fff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 24px;
+            color: #18324a;
             margin-bottom: 20px;
         }
-        .contact-section p {
-            margin: 8px 0;
-            font-size: 16px;
-            color: #cbd5e0;
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .team-box {
+            background: #f5f7f9;
+            padding: 35px;
+            border-left: 4px solid #18324a;
+        }
+
+        .team-box h3 {
+            color: #18324a;
+            margin-bottom: 20px;
+        }
+
+        .team-box ul {
+            list-style: none;
+        }
+
+        .team-box li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* =========================
+           Services
+        ========================= */
+
+        .services {
+            background: #f6f8fa;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #e5e5e5;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .service-card h3 {
+            color: #18324a;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Price
+        ========================= */
+
+        .price {
+            background: #fff;
+        }
+
+        .price-table {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .price-table th,
+        .price-table td {
+            border: 1px solid #ddd;
+            padding: 18px 20px;
             text-align: center;
         }
-        .contact-section a {
-            color: #63b3ed;
-            text-decoration: none;
+
+        .price-table th {
+            background: #18324a;
+            color: #fff;
+            font-weight: normal;
+        }
+
+        .price-table td {
+            font-size: 16px;
+        }
+
+        .price-table td:last-child {
             font-weight: bold;
-            font-size: 18px;
+            color: #18324a;
         }
-        .contact-section a:hover {
-            color: #90cdf4;
-            text-decoration: underline;
+
+        .price-note {
+            max-width: 850px;
+            margin: 25px auto 0;
+            font-size: 13px;
+            color: #777;
         }
-        /* 响应式 */
-        @media (max-width: 600px) {
-            .top-nav { padding: 12px 20px; }
-            .top-nav a { display: block; margin: 5px 0; }
-            .hero-section { padding: 40px 20px; }
-            .hero-section h1 { font-size: 22px; }
-            .content { padding: 20px; }
-            .blog-card { flex-direction: column; text-align: center; }
+
+        /* =========================
+           Workflow
+        ========================= */
+
+        .workflow {
+            background: #f6f8fa;
+        }
+
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .workflow-item {
+            position: relative;
+            background: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+        }
+
+        .workflow-number {
+            width: 42px;
+            height: 42px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #18324a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .workflow-item h3 {
+            color: #18324a;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .workflow-item p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* =========================
+           Quality
+        ========================= */
+
+        .quality {
+            background: #fff;
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .quality-card {
+            padding: 30px;
+            background: #f6f8fa;
+        }
+
+        .quality-card h3 {
+            color: #18324a;
+            margin-bottom: 12px;
+        }
+
+        .quality-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* =========================
+           Japan Support
+        ========================= */
+
+        .support {
+            background: #f6f8fa;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .support-card {
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+        }
+
+        .support-card h3 {
+            color: #18324a;
+            margin-bottom: 12px;
+        }
+
+        .support-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* =========================
+           Contact
+        ========================= */
+
+        .contact {
+            background: #18324a;
+            color: #fff;
+        }
+
+        .contact .section-title h2 {
+            color: #fff;
+        }
+
+        .contact .section-title p {
+            color: #d7e0e7;
+        }
+
+        .contact-box {
+            max-width: 750px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.08);
+            padding: 40px;
+        }
+
+        .contact-row {
+            padding: 13px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-row:last-child {
+            border-bottom: none;
+        }
+
+        .contact-label {
+            display: inline-block;
+            width: 130px;
+            font-weight: bold;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #fff;
+            color: #18324a;
+            padding: 13px 30px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        /* =========================
+           Footer
+        ========================= */
+
+        footer {
+            background: #102536;
+            color: #bfcbd4;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 12px;
+        }
+
+        /* =========================
+           Responsive
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .about-grid,
+            .service-grid,
+            .quality-grid,
+            .support-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .workflow-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px 15px;
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 560px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            .section-title h2 {
+                font-size: 27px;
+            }
+
+            .about-grid,
+            .service-grid,
+            .quality-grid,
+            .support-grid,
+            .workflow-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 25px;
+            }
+
+            .contact-label {
+                display: block;
+                width: auto;
+                margin-bottom: 3px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    
-    <!-- 顶部导航 -->
-    <div class="top-nav">
-        <a href="index.html">ホーム</a>
-        <!-- 以后有更多页面时，在这里加 <a href="...">CAD業務ブログ</a> -->
-    </div>
+<!-- =========================
+     Header
+========================= -->
 
-    <!-- 首页主视觉 -->
-    <div class="hero-section">
-        <h1>大連CADチーム</h1>
-        <p>RC造施工図・建築CAD業務サポート<br>（中国・大連拠点 / 日本語対応 / NDA対応可）</p>
-    </div>
+<header>
+    <div class="header-inner">
 
-    <!-- 主要内容区域 -->
-    <div class="content">
-        
-        <!-- 业务简介 -->
-        <div class="intro-block">
-            <p>大連CADチームでは、中国・大連を拠点として、RC造を中心とした建築施工図の作成、図面修正、CADトレースなどのCAD業務をサポートしています。</p>
-            <p>施工図作成における豊富な経験を持つスタッフが、日本のお客様と日本語で直接コミュニケーションを取りながら業務を進めます。小規模な業務から、秘密保持契約（NDA）が必要な案件まで、お気軽にご相談ください。</p>
+        <div class="logo">
+            大連CADチーム
         </div>
 
-        <!-- CAD業務ブログ（文章列表） -->
-        <div class="blog-section">
-            <h2>CAD業務ブログ</h2>
-            
-            <!-- 第一篇文章卡片 -->
-            <a href="cad-service.html" class="blog-card">
-                <div class="blog-card-content">
-                    <h3>RC造施工図の外注なら大連CADチーム｜建築施工図作成に対応</h3>
-                    <p>RC造を中心とした建築施工図の作成、図面修正、CADトレースなどのCAD業務をご紹介します。</p>
-                </div>
-            </a>
-            
-            <!-- 以后有第二篇、第三篇，就继续复制上面的 <a> 标签，修改链接和标题即可 -->
-            
+        <nav>
+            <ul>
+                <li><a href="#about">チーム概要</a></li>
+                <li><a href="#services">業務内容</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#workflow">ご依頼の流れ</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     Hero
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <h1>
+            建築施工図作成・<br>
+            CAD業務サポート
+        </h1>
+
+        <div class="hero-subtitle">
+            RC造施工図を中心としたCAD業務支援
         </div>
 
-        <!-- 联系方式卡片 -->
-        <div class="contact-section">
+        <p class="hero-text">
+            大連CADチームは、中国・大連を拠点として、
+            RC造施工図を中心とした建築CAD業務をサポートしています。
+            施工図作成21年の経験者を中心に、7名体制で対応。
+            日本のお客様とのメールでのやり取りにも対応しております。
+        </p>
+
+        <a href="#contact" class="hero-button">
+            お問い合わせはこちら
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     About
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+            <h2>チーム概要</h2>
+            <p>経験とチェック体制を重視したCAD業務サポート</p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>
+                    RC造施工図を中心に対応
+                </h3>
+
+                <p>
+                    大連CADチームでは、RC造を中心とした建築施工図の作成、
+                    図面修正、CADトレースなどの業務を行っています。
+                </p>
+
+                <p>
+                    作図前に図面内容を確認し、
+                    必要事項を整理したうえで作図を進めることを大切にしています。
+                </p>
+
+                <p>
+                    日本のお客様からのご指示・修正内容を確認しながら、
+                    丁寧な図面作成を心掛けています。
+                </p>
+
+            </div>
+
+            <div class="team-box">
+
+                <h3>チーム体制</h3>
+
+                <ul>
+                    <li>7名体制</li>
+                    <li>作図担当：6名</li>
+                    <li>チェック担当：1名</li>
+                    <li>作図担当者は10年以上のCAD経験</li>
+                    <li>代表：施工図作成21年</li>
+                    <li>図面チェック経験15年</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Services
+========================= -->
+
+<section class="services" id="services">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+            <h2>業務内容</h2>
+            <p>建築施工図・CAD業務を幅広くサポート</p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <h3>RC造施工図</h3>
+                <p>
+                    RC造建築物を中心とした施工図の作成に対応します。
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>伏図・見上図</h3>
+                <p>
+                    基礎伏図、杭伏図、床伏図、屋根伏図、見上図などに対応します。
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>躯体施工図</h3>
+                <p>
+                    躯体施工図、階段躯体図などの作図に対応します。
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>平面詳細図</h3>
+                <p>
+                    平面詳細図、仕上施工図などの作図に対応します。
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>竣工図・図面修正</h3>
+                <p>
+                    竣工図作成、既存図面の修正・変更などに対応します。
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>CADトレース・CAD化</h3>
+                <p>
+                    PDF、画像等からのCADトレース・CAD化にも対応します。
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Price
+========================= -->
+
+<section class="price" id="price">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+            <h2>料金</h2>
+            <p>ご依頼内容に応じて対応いたします</p>
+        </div>
+
+        <table class="price-table">
+
+            <tr>
+                <th>図面サイズ</th>
+                <th>料金</th>
+            </tr>
+
+            <tr>
+                <td>A1</td>
+                <td>¥9,500</td>
+            </tr>
+
+            <tr>
+                <td>A2</td>
+                <td>¥8,500</td>
+            </tr>
+
+            <tr>
+                <td>A3</td>
+                <td>¥7,500</td>
+            </tr>
+
+            <tr>
+                <td>図面トレース</td>
+                <td>¥1,200</td>
+            </tr>
+
+        </table>
+
+        <div class="price-note">
+
+            ※ チェックバック訂正、1回目は無料。<br>
+            ※ 図面の内容・難易度・作業量等によっては、別途お見積りとなる場合があります。
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Workflow
+========================= -->
+
+<section class="workflow" id="workflow">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+            <h2>ご依頼の流れ</h2>
+            <p>確認から納品まで丁寧に対応します</p>
+        </div>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-item">
+
+                <div class="workflow-number">1</div>
+
+                <h3>図面受領</h3>
+
+                <p>
+                    PDF・DWG等の資料をお送りいただきます。
+                </p>
+
+            </div>
+
+
+            <div class="workflow-item">
+
+                <div class="workflow-number">2</div>
+
+                <h3>事前確認</h3>
+
+                <p>
+                    作図内容や不明点を確認し、
+                    必要に応じて事前にご質問します。
+                </p>
+
+            </div>
+
+
+            <div class="workflow-item">
+
+                <div class="workflow-number">3</div>
+
+                <h3>作図・チェック</h3>
+
+                <p>
+                    作図後、担当者によるチェックを行います。
+                </p>
+
+            </div>
+
+
+            <div class="workflow-item">
+
+                <div class="workflow-number">4</div>
+
+                <h3>納品・修正対応</h3>
+
+                <p>
+                    ご指定の形式で納品し、
+                    チェックバックにも対応します。
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Quality
+========================= -->
+
+<section class="quality">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+            <h2>品質管理</h2>
+            <p>作図だけでなく確認・チェックも重視しています</p>
+        </div>
+
+        <div class="quality-grid">
+
+            <div class="quality-card">
+
+                <h3>作図前の確認</h3>
+
+                <p>
+                    図面内容や指示事項を確認し、
+                    不明点がある場合は作図前に確認します。
+                </p>
+
+            </div>
+
+
+            <div class="quality-card">
+
+                <h3>経験者によるチェック</h3>
+
+                <p>
+                    作図後にチェック担当者が図面を確認し、
+                    ミスの防止に努めています。
+                </p>
+
+            </div>
+
+
+            <div class="quality-card">
+
+                <h3>修正への対応</h3>
+
+                <p>
+                    納品後のチェックバックや修正についても、
+                    内容を確認しながら対応します。
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Japan Support
+========================= -->
+
+<section class="support">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+            <h2>日本のお客様への対応</h2>
+            <p>海外拠点でもスムーズなやり取りを目指します</p>
+        </div>
+
+        <div class="support-grid">
+
+            <div class="support-card">
+
+                <h3>日本語メール対応</h3>
+
+                <p>
+                    日本語でのメールによる
+                    ご連絡・確認に対応しています。
+                </p>
+
+            </div>
+
+
+            <div class="support-card">
+
+                <h3>小規模案件から対応</h3>
+
+                <p>
+                    まずは少量の図面作成や
+                    CAD作業からでもご相談いただけます。
+                </p>
+
+            </div>
+
+
+            <div class="support-card">
+
+                <h3>NDA対応</h3>
+
+                <p>
+                    秘密保持契約（NDA）の締結にも
+                    対応可能です。
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Contact
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
             <h2>お問い合わせ</h2>
-            <p style="font-size: 18px; color: #fff; margin-top: 15px;">大連CADチーム</p>
-            <p>代表：王 啓華（オウ ケイ カ）</p>
-            <p>所在地：中国遼寧省大連市</p>
-            <p>E-mail：<a href="mailto:wangqihua5212@outlook.com">wangqihua5212@outlook.com</a></p>
+
+            <p>
+                施工図作成・CADトレースなど、
+                お気軽にご相談ください。
+            </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    担当
+                </span>
+
+                王 啓華（オウ ケイ カ）
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    チーム
+                </span>
+
+                大連CADチーム
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    所在地
+                </span>
+
+                中国遼寧省大連市開発区
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    業務内容
+                </span>
+
+                建築CAD図面作成 / 施工図作成 / CADトレース / 図面修正
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    E-mail
+                </span>
+
+                wangqihua5212@outlook.com
+
+            </div>
+
+
+            <a
+                href="mailto:wangqihua5212@outlook.com"
+                class="contact-button">
+                メールでお問い合わせ
+            </a>
+
         </div>
 
     </div>
-</div>
+
+</section>
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 大連CADチーム All Rights Reserved.
+    </p>
+
+</footer>
+
 
 </body>
 </html>

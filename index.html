@@ -34,7 +34,8 @@
         }
 
         body {
-            font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            font-family: "Noto Sans JP", "Yu Gothic",
+                "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
             color: var(--text);
             line-height: 1.85;
             background: var(--white);
@@ -366,7 +367,7 @@
             font-size: 19px;
         }
 
-        /* 50枚以上の優待価格 */
+        /* 数量割引の価格表示 */
 
         .price-table .discount-row td {
             background: var(--green-light);
@@ -374,7 +375,7 @@
 
         .price-table .discount-row td:last-child {
             color: var(--green);
-            font-size: 22px;
+            font-size: 19px;
             font-weight: 800;
         }
 
@@ -613,7 +614,7 @@
             }
 
             .price-table .discount-row td:last-child {
-                font-size: 18px;
+                font-size: 15px;
             }
 
             .price-group h3 {
@@ -654,6 +655,7 @@
 
 <main id="top">
 
+    <!-- メインビジュアル -->
     <section class="hero">
         <div class="hero-inner">
             <p class="eyebrow">DALIAN CAD TEAM · CHINA</p>
@@ -673,6 +675,7 @@
         </div>
     </section>
 
+    <!-- チーム概要 -->
     <section id="about">
         <div class="container">
 
@@ -682,7 +685,6 @@
             </div>
 
             <div class="about-grid">
-
                 <div class="about-copy">
                     <h3>RC造施工図を中心に対応</h3>
 
@@ -701,7 +703,6 @@
 
                 <div class="team-box">
                     <h3>10名体制の作図チーム</h3>
-
                     <ul>
                         <li><span class="team-number">10名</span>　チーム全体</li>
                         <li><strong>作図担当：9名</strong></li>
@@ -711,11 +712,11 @@
                         <li>図面チェック経験15年</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- 業務内容 -->
     <section class="services" id="services">
         <div class="container">
 
@@ -725,7 +726,6 @@
             </div>
 
             <div class="service-grid">
-
                 <article class="service-card">
                     <h3>RC造施工図</h3>
                     <p>
@@ -763,11 +763,11 @@
                         <li>仕上施工図・竣工図の作成</li>
                     </ul>
                 </article>
-
             </div>
         </div>
     </section>
 
+    <!-- 対応図面の例 -->
     <section id="examples">
         <div class="container">
 
@@ -777,42 +777,50 @@
             </div>
 
             <div class="examples-grid">
-
                 <article class="example-card">
-                    <img src="images/sample-foundation.png" alt="基礎伏図のサンプル（機密情報を一部マスキング）" loading="lazy">
+                    <img src="images/sample-foundation.png"
+                         alt="基礎伏図のサンプル"
+                         loading="lazy">
                     <div class="example-no">01 / 躯体施工図</div>
                     <h3>基礎伏図</h3>
                     <p>基礎・柱位置、通り芯、寸法などを整理した図面</p>
                 </article>
 
                 <article class="example-card">
-                    <img src="images/sample-floor-plan.png" alt="床伏図のサンプル（機密情報を一部マスキング）" loading="lazy">
+                    <img src="images/sample-floor-plan.png"
+                         alt="床伏図のサンプル"
+                         loading="lazy">
                     <div class="example-no">02 / 躯体施工図</div>
                     <h3>床伏図</h3>
                     <p>床・梁などの配置や寸法を示す図面</p>
                 </article>
 
                 <article class="example-card">
-                    <img src="images/sample-ceiling-view.png" alt="見上図のサンプル（機密情報を一部マスキング）" loading="lazy">
+                    <img src="images/sample-ceiling-view.png"
+                         alt="見上図のサンプル"
+                         loading="lazy">
                     <div class="example-no">03 / 躯体施工図</div>
                     <h3>見上図</h3>
                     <p>躯体形状や梁・スラブなどを確認する図面</p>
                 </article>
 
                 <article class="example-card">
-                    <img src="images/sample-toilet-detail.png" alt="平面詳細図のサンプル（機密情報を一部マスキング）" loading="lazy">
+                    <img src="images/sample-toilet-detail.png"
+                         alt="平面詳細図のサンプル"
+                         loading="lazy">
                     <div class="example-no">04 / 意匠施工図</div>
                     <h3>平面詳細図</h3>
                     <p>室内の納まりや仕上げ、寸法などを示す図面</p>
                 </article>
 
                 <article class="example-card">
-                    <img src="images/sample-stair-structure.png" alt="階段躯体図のサンプル（機密情報を一部マスキング）" loading="lazy">
+                    <img src="images/sample-stair-structure.png"
+                         alt="階段躯体図のサンプル"
+                         loading="lazy">
                     <div class="example-no">05 / 躯体施工図</div>
                     <h3>階段躯体図</h3>
                     <p>階段の躯体形状や寸法を示す図面</p>
                 </article>
-
             </div>
 
             <p class="example-note">
@@ -825,7 +833,6 @@
     </section>
 
     <!-- 料金 -->
-
     <section id="price">
         <div class="container">
 
@@ -835,7 +842,6 @@
             </div>
 
             <!-- 施工図作成 -->
-
             <div class="price-group">
                 <h3>施工図作成</h3>
 
@@ -846,16 +852,14 @@
                             <th>料金（1枚）</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>1～50枚</td>
-                            <td>9,500円</td>
+                            <td><strong>9,500円</strong></td>
                         </tr>
-
                         <tr class="discount-row">
-                            <td class="discount-label">51枚以上</td>
-                            <td>9,000円</td>
+                            <td class="discount-label"><strong>51枚以上</strong></td>
+                            <td><strong>9,000円</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -866,7 +870,6 @@
             </div>
 
             <!-- CADトレース -->
-
             <div class="price-group">
                 <h3>CADトレース（PDFからCADへの変換）</h3>
 
@@ -877,22 +880,44 @@
                             <th>料金（1枚）</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>1～49枚</td>
-                            <td>7,000円</td>
+                            <td><strong>7,000円</strong></td>
                         </tr>
-
                         <tr class="discount-row">
-                            <td class="discount-label">50枚以上</td>
-                            <td>6,500円</td>
+                            <td class="discount-label"><strong>50枚以上</strong></td>
+                            <td><strong>6,500円</strong></td>
                         </tr>
                     </tbody>
                 </table>
 
                 <p class="price-note">
                     ※特殊図面・大型図面・複雑な図面については、別途お見積りいたします。
+                </p>
+            </div>
+
+            <!-- 竣工図作成・図面修正 -->
+            <div class="price-group">
+                <h3>竣工図作成・図面修正</h3>
+
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>作業内容</th>
+                            <th>料金</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>竣工図作成・図面修正</td>
+                            <td><strong>1,500円／時間</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="price-note">
+                    ※作業内容・修正範囲を確認したうえで、お見積りいたします。
                 </p>
             </div>
 
@@ -905,6 +930,7 @@
         </div>
     </section>
 
+    <!-- ご依頼の流れ -->
     <section class="workflow" id="workflow">
         <div class="container">
 
@@ -914,7 +940,6 @@
             </div>
 
             <div class="workflow-grid">
-
                 <article class="workflow-item">
                     <div class="workflow-number">1</div>
                     <h3>資料・ご要望の確認</h3>
@@ -938,11 +963,12 @@
                     <h3>納品・修正対応</h3>
                     <p>ご指定の形式で納品し、チェックバックに対応します。</p>
                 </article>
-
             </div>
+
         </div>
     </section>
 
+    <!-- 品質管理 -->
     <section id="quality">
         <div class="container">
 
@@ -952,7 +978,6 @@
             </div>
 
             <div class="quality-grid">
-
                 <article class="quality-card">
                     <h3>作図前の確認</h3>
                     <p>図面内容や指示事項を確認し、不明点がある場合は作図前に確認します。</p>
@@ -967,11 +992,12 @@
                     <h3>修正への対応</h3>
                     <p>チェックバックの内容を確認し、ご指示に沿って修正対応を行います。</p>
                 </article>
-
             </div>
+
         </div>
     </section>
 
+    <!-- 日本のお客様への対応 -->
     <section class="support" id="support">
         <div class="container">
 
@@ -981,7 +1007,6 @@
             </div>
 
             <div class="support-grid">
-
                 <article class="support-card">
                     <h3>日本語メール対応</h3>
                     <p>日本語でのメールによるご連絡・確認に対応しています。</p>
@@ -991,11 +1016,12 @@
                     <h3>秘密保持への配慮</h3>
                     <p>図面データやご提供資料を適切に取り扱います。秘密保持契約（NDA）についてもご相談いただけます。</p>
                 </article>
-
             </div>
+
         </div>
     </section>
 
+    <!-- お問い合わせ -->
     <section class="contact" id="contact">
         <div class="container">
 
@@ -1005,7 +1031,6 @@
             </div>
 
             <div class="contact-box">
-
                 <div class="contact-row">
                     <span class="contact-label">担当</span>
                     王 啓華（オウ ケイ カ）
@@ -1031,11 +1056,12 @@
                     <a href="mailto:wangqihua5212@outlook.com">wangqihua5212@outlook.com</a>
                 </div>
 
-                <a href="mailto:wangqihua5212@outlook.com?subject=%E6%96%BD%E5%B7%A5%E5%9B%B3%E4%BD%9C%E6%88%90%E3%81%AE%E3%81%8A%E8%A6%8B%E7%A9%8D%E3%82%8A%E3%83%BB%E3%81%94%E7%9B%B8%E8%AB%87" class="contact-button">
+                <a href="mailto:wangqihua5212@outlook.com?subject=%E6%96%BD%E5%B7%A5%E5%9B%B3%E4%BD%9C%E6%88%90%E3%81%AE%E3%81%8A%E8%A6%8B%E7%A9%8D%E3%82%8A%E3%83%BB%E3%81%94%E7%9B%B8%E8%AB%87"
+                   class="contact-button">
                     メールで相談する
                 </a>
-
             </div>
+
         </div>
     </section>
 
